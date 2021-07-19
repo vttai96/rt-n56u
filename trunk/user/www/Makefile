@@ -118,6 +118,7 @@ ifeq ($(CONFIG_FIRMWARE_INCLUDE_LANG_CN),y)
 	sed $(BOARD_PATTERN) -i $(ROMFS_DIR)/www/CN.dict
 	sed $(COPYR_PATTERN) -i $(ROMFS_DIR)/www/CN.dict
 	sed $(DWURL_PATTERN) -i $(ROMFS_DIR)/www/CN.dict
+	sed $(DWURL_MOD_PATTERN) -i $(ROMFS_DIR)/www/CN.dict
 endif
 	cat $(ROMFS_DIR)/www/EN.header dict/EN.footer > $(ROMFS_DIR)/www/EN.dict
 	sed $(BOARD_PATTERN) -i $(ROMFS_DIR)/www/EN.dict
