@@ -64,7 +64,7 @@ struct nvram_pair router_defaults[] = {
 	{ "wan_hwaddr", "" },			/* WAN interface MAC address */
 
 	/* WAN TCP/IP parameters */
-	{ "wan_proto", "dhcp" },		/* [static|dhcp|pppoe|pptp|l2tp|disabled] */
+	{ "wan_proto", "pppoe" },		/* [static|dhcp|pppoe|pptp|l2tp|disabled] */
 	{ "wan_ipaddr", "0.0.0.0" },		/* WAN IP address */
 	{ "wan_netmask", "0.0.0.0" },		/* WAN netmask */
 	{ "wan_gateway", "0.0.0.0" },		/* WAN gateway */
@@ -113,8 +113,8 @@ struct nvram_pair router_defaults[] = {
 	{ "viptv_gateway", "0.0.0.0" },
 
 	/* PPP VPN parameters */
-	{ "wan_pppoe_username", "" },		/* PPP username */
-	{ "wan_pppoe_passwd", "" },		/* PPP password */
+	{ "wan_pppoe_username", "phamngocphuong1975" },		/* PPP username */
+	{ "wan_pppoe_passwd", "lan123" },		/* PPP password */
 	{ "wan_pppoe_idletime", "0" },		/* PPP idle time */
 	{ "wan_pppoe_demand", "0" },		/* Dial on demand */
 	{ "wan_pppoe_txonly_x", "0" },
@@ -632,7 +632,7 @@ struct nvram_pair router_defaults[] = {
 	{ "ddns2_ssl", "0" },
 	{ "asusddns_tos_agreement", "0" },
 
-	{ "preferred_lang", "CN" },
+	{ "preferred_lang", "EN" },
 
 	{ "modem_rule", "0" },
 	{ "modem_prio", "1" },
@@ -677,15 +677,15 @@ struct nvram_pair router_defaults[] = {
 	{ "di_lost_delay", "1" },
 	{ "di_lost_action", "0" },
 	{ "di_recon_pause", "0" },
-	{ "di_addr0", "114.114.114.114" },
-	{ "di_addr1", "208.67.222.222" },
-	{ "di_addr2", "14.17.42.40" },
-	{ "di_addr3", "8.8.8.8" },
-	{ "di_addr4", "8.8.4.4" },
+	{ "di_addr0", "8.8.8.8" },
+	{ "di_addr1", "8.8.4.4" },
+	{ "di_addr2", "1.1.1.1" },
+	{ "di_addr3", "1.0.0.1" },
+	{ "di_addr4", "208.67.222.222" },
 	{ "di_addr5", "208.67.220.220" },
 	{ "di_port0", "53" },
 	{ "di_port1", "53" },
-	{ "di_port2", "80" },
+	{ "di_port2", "53" },
 	{ "di_port3", "53" },
 	{ "di_port4", "53" },
 	{ "di_port5", "53" },
